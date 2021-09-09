@@ -1,0 +1,170 @@
+body {
+  background-color: #e5e5e5;
+}
+
+/* ---------------------- font ----------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* -----------------------------------------end - font */
+
+/* ---------------------------- first section ------------------------ */
+
+#first_section {
+  background: #243413;
+  padding: 5px;
+  /* position: fixed; */
+  /* width: 100%; */
+}
+
+/* ---------------------- left side div ----------------------- */
+
+.left-side-div-padding {
+  padding: 30px;
+  background-color: white;
+}
+
+.left-side-div-title {
+  text-align: center;
+  color: #220082;
+  font-size: 19px;
+}
+
+.task_completed {
+  padding-top: 5px;
+}
+
+.completed_this_month {
+  padding-top: 20px;
+}
+
+/* ------------------------------------------ end left side div */
+
+/* --------- icon ----------- */
+
+.icon-img-1 {
+  width: 30px;
+}
+
+.icon-img-2 {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* --------------- end - icon */
+
+/* --------- title ----------- */
+
+.title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* --------------- end - title */
+
+/* --------- login ----------- */
+
+.login_btn_div {
+  padding-top: 10px;
+}
+
+.login_btn {
+  display: block;
+  margin: auto;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  background-color: #243413;
+  transition: all 0.5s ease-in-out;
+}
+
+.login_btn:hover {
+  background-color: green;
+  color: white;
+}
+
+/* --------------- end - login */
+
+/* -- container padding ----- */
+
+.container-padding {
+  margin-top: 3%;
+}
+
+/* - end - container padding - */
+
+/* ---------------------------------------------- end - first section  */
+
+/* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* ------------------------------------------------------------------------------------ end - media screen for tab ( portrait )  */
+
+/* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+}
+
+/* -------------------------------------------------------------------------------------- end - media screen for tab (landscape) */
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* ---------------------------------------------------------------------------------- end - media screen for tab (pro) portrait */
+
+/* ---------------------------------------------- media screen for tab ( pro ) landscape --------------------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ------------------------------------------------------------------------------- end - media screen for tab ( pro ) landscape  */
+
+/* ------------------------------------------------------- media screen for mobile devices ------------------------------------- */
+@media only screen and (max-width: 600px) {
+  /* --------- title ----------- */
+
+  .title {
+    display: none;
+  }
+
+  /* --------------- end - title */
+
+  /* ------- login btn --------- */
+
+  .login_btn {
+    display: block;
+    margin: auto;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 10px;
+    background-color: #243413;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* ------ end -  login btn ---- */
+}
+
+/* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (device-width: 1366px) and (device-height: 768px) {
+}
+
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
