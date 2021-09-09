@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Data</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/view_data.css" />
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------ first section ------------------------------------------------------------------  -->
+
+    <section id="first_section">
+      <!-- ------------------------------------------ first content ---------------------------------------------------- -->
+      <div class="content">
+        <div class="row" style="margin: 0; padding: 0">
+          <!-- -------------------------------------- icon --------------------------------------- -->
+          <div class="col-3">
+            <div style="display: flex">
+              <img src="images/govt_1.png" alt="" class="icon-img-1" />
+              <img src="images/govt_2.png" alt="" class="icon-img-2" />
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------------------------- end - icon -->
+
+          <!-- --------------------------------------- title -------------------------------------- -->
+
+          <div class="col-6">
+            <p class="title">
+              Bangladesh Forest Ecosystem Services Valuation (ESV) Database
+            </p>
+          </div>
+
+          <!-- ------------------------------------------------------------------------- end - title -->
+
+          <!-- --------------------------------------- logout -------------------------------------- -->
+
+          <div class="col-3">
+            <div class="login_btn_div">
+              <button
+                class="login_btn"
+                data-toggle="modal"
+                data-target="#modalLogOut"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+
+          <!-- logout Modal -->
+          <div
+            class="modal fade"
+            id="modalLogOut"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalLogOut"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLogOut">Logout</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">Are you sure want to Log Out?</div>
+                <div class="modal-footer">
+                  <!-- <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button> -->
+
+                  <button type="button" class="btn btn-success">Yes</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    No
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- end - logout modal -->
+          </div>
+
+          <!-- ------------------------------------------------------------------------ end - logout -->
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------ end - first content -->
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------- end - first section -->
+
+    <!-- ---------------------------------------------------------------- second section ----------------------------------------------------------------- -->
+
+    <section id="second_section">
+      <div class="container">
+        <h4 class="management">Data Management</h4>
+        <div>
+          <table>
+            <!-- <caption>
+              Employee Information
+            </caption> -->
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">My Responses</th>
+              </tr>
+            </thead>
+            <!-- <tfoot>
+              <tr>
+                <td colspan="3">Data is updated every 15 minutes.</td>
+              </tr>
+            </tfoot> -->
+            <tbody>
+              <tr>
+                <th scope="row">ES_value_ID</th>
+                <td>xyz</td>
+              </tr>
+              <tr>
+                <th scope="row">StudyID</th>
+                <td>xyz</td>
+              </tr>
+              <tr>
+                <th scope="row">TEEB_Biome</th>
+                <td>xyz</td>
+              </tr>
+              <tr>
+                <th scope="row">TEEB_Biome_Code</th>
+                <td>xyz</td>
+              </tr>
+              <tr>
+                <th scope="row">Ecosystem</th>
+                <td>xyz</td>
+              </tr>
+
+              <tr>
+                <th scope="row">TEEB_ES_Code</th>
+                <td>xyz</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- end - second section  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
