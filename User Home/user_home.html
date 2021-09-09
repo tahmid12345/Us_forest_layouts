@@ -42,15 +42,68 @@
 
           <!-- ------------------------------------------------------------------------- end - title -->
 
-          <!-- --------------------------------------- login -------------------------------------- -->
+          <!-- --------------------------------------- logout -------------------------------------- -->
 
           <div class="col-3">
             <div class="login_btn_div">
-              <button class="login_btn">Login</button>
+              <button
+                class="login_btn"
+                data-toggle="modal"
+                data-target="#modalLogOut"
+              >
+                Logout
+              </button>
             </div>
           </div>
 
-          <!-- ------------------------------------------------------------------------ end - login -->
+          <!-- logout Modal -->
+          <div
+            class="modal fade"
+            id="modalLogOut"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalLogOut"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLogOut">Logout</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">Are you sure want to Log Out?</div>
+                <div class="modal-footer">
+                  <!-- <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button> -->
+
+                  <button type="button" class="btn btn-success">Yes</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    No
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- end - logout modal -->
+          </div>
+
+          <!-- ------------------------------------------------------------------------ end - logout -->
         </div>
       </div>
 
@@ -62,10 +115,10 @@
     <!-- -------------------------------------------------------- second section -------------------------------------------------------------------------- -->
 
     <div class="container container-padding">
-      <h4>Dashboard</h4>
+      <h3 class="dashboard-text">Dashboard</h3>
 
       <div class="row" style="margin: 0; padding: 0">
-        <!-- ------------------- left side -------------- -->
+        <!-- ------------------------------------ left side -------------------------------- -->
         <div class="col-md-6">
           <div class="left-side-div-padding">
             <p class="left-side-div-title">Task Management</p>
@@ -96,10 +149,111 @@
                 </div>
               </div>
             </div>
+            <!-- ---------------------- to do list ------------------->
+            <div class="todo-list-div">
+              <p class="todo_list_text">To Do</p>
+              <p class="survey_report_pdf">Survey_Report_01.pdf</p>
+              <div class="move_in_progress_div">
+                <button class="move_in_progress_button">
+                  Move To In Progress
+                </button>
+              </div>
+              <!-- ------- in progress ------ -->
+              <div class="in-progress-div">
+                <p class="in-progress-header">In Progress</p>
+                <p class="in-progress-p">No work assigned</p>
+              </div>
+
+              <!-- -------- end -in progress  -->
+
+              <button class="move_in_progress_button">Mark as Done</button>
+
+              <!-- ------- in progress ------ -->
+              <div class="in-progress-div">
+                <p class="in-progress-header">Completed</p>
+                <p class="in-progress-p">No work assigned</p>
+              </div>
+
+              <!-- -------- end -in progress  -->
+            </div>
+            <!-- -------------------------------- end - to do list -->
           </div>
         </div>
 
-        <!-- ---------------------------- end - left side  -->
+        <!-- --------------------------------------------------------- end - left side  -->
+
+        <!-- ------------------------------- right side ------------------------------- -->
+        <div class="col-md-6 right-side-mobile">
+          <div class="row" style="margin: 0; padding: 0">
+            <!-- -------------- Database management ---------------- -->
+            <div class="col-md-12">
+              <div class="right-side-div-padding">
+                <p class="right-side-div-title">Database Mangement</p>
+                <div class="right-side-button-div">
+                  <div>
+                    <button class="view-data-button">View Data</button>
+                  </div>
+
+                  <div>
+                    <button class="view-data-button">Start Survey</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------- end - Database management ---------- -->
+
+            <!-- ------------------- Settings ---------------------- -->
+            <div class="col-md-12">
+              <div class="right-side-div-padding settings-margin">
+                <p class="settings-title">Settings</p>
+
+                <!-- -------- change password form ------ -->
+                <div class="change-password-div">
+                  <p class="settings-title">Change Password</p>
+                  <div class="form-div">
+                    <form action="">
+                      <div>
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="Old Password"
+                        />
+                      </div>
+
+                      <div>
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="new Password"
+                        />
+                      </div>
+
+                      <div>
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="Confirm New Password"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="submit"
+                          class="submit"
+                          value="Change Password"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- --------- end - change password form -->
+              </div>
+            </div>
+
+            <!-- ------------------------------------ end - Settings -->
+          </div>
+        </div>
+        <!-- --------------------------------------------------------- end - right side -->
       </div>
     </div>
 

@@ -17,10 +17,19 @@ body {
   /* width: 100%; */
 }
 
+.dashboard-text {
+  font-weight: 700px;
+  margin-left: 15px;
+}
+
 /* ---------------------- left side div ----------------------- */
 
+.left-side-div-title {
+  padding-bottom: 20px;
+}
+
 .left-side-div-padding {
-  padding: 30px;
+  padding: 50px;
   background-color: white;
 }
 
@@ -35,10 +44,152 @@ body {
 }
 
 .completed_this_month {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
+/* ----------------- to do list ------------- */
+
+.todo-list-div {
+  border: 1px solid #220082;
+  border-radius: 15px 15px 15px 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.survey_report_pdf {
+  border: 1px solid #9f9f9f;
+  display: inline;
+  padding: 10px 20px;
+  color: #3a3a3a;
+  font-size: 10px;
+}
+
+.move_in_progress_div {
+  margin-top: 10px;
+}
+
+.move_in_progress_button {
+  display: block;
+  margin-left: auto;
+  background: #220082;
+  border-radius: 50px;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+/* ------------------------ end - to do list  */
+
+/* ---------------- in progress div ------- -- */
+
+.in-progress-div {
+  margin-top: 10px;
+}
+
+.in-progress-header {
+  font-size: 22px;
+}
+
+.in-progress-p {
+  font-size: 13px;
+  color: #e5e5e5;
+}
+
+/* ---------------- end ------in progress div  */
+
 /* ------------------------------------------ end left side div */
+
+/* --------------------- right side div ----------------------- */
+
+.right-side-div-padding {
+  background-color: white;
+  padding: 50px;
+}
+
+.right-side-div-title {
+  text-align: center;
+  color: #609513;
+  font-size: 19px;
+}
+
+/* ---------- right side div button -------- */
+
+.right-side-button-div {
+  margin-top: 10%;
+}
+
+.view-data-button {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 200px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #538200;
+  color: white;
+  padding: 10px 0;
+}
+
+/* ------------ end - right side div button  */
+
+/* ----------------- settings -------------- */
+
+.settings-margin {
+  margin-top: 30px;
+}
+
+.settings-title {
+  text-align: center;
+  color: #009797;
+  font-size: 19px;
+}
+
+/* -------------------------- end - settings */
+
+/* --------- change-password-div ----------- */
+
+.change-password-div {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: 1px solid #009797;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #c4c4c4;
+  margin-top: 20px;
+  /* width: auto; */
+  max-width: 100%;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #009797;
+  width: 80%;
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  padding: 10px 0;
+  color: white;
+  font-size: 13px;
+}
+
+/* -------------- end - change-password-div  */
+
+/* -------------------------------------- end - right side div  */
 
 /* --------- icon ----------- */
 
@@ -158,6 +309,30 @@ body {
   }
 
   /* ------ end -  login btn ---- */
+
+  .right-side-mobile {
+    margin-top: 10%;
+  }
+
+  .view-data-button {
+    width: 100%;
+  }
+
+  input {
+    font-size: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 10px;
+  }
+
+  .task_completed {
+    font-size: 13px;
+  }
+
+  .completed_this_month {
+    font-size: 13px;
+  }
 }
 
 /* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
