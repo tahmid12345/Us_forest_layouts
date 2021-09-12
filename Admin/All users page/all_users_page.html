@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All users page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css"
+    />
+    <link rel="stylesheet" href="css/all_users_page.css" />
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------ first section ------------------------------------------------------------------  -->
+
+    <section id="first_section">
+      <!-- ------------------------------------------ first content ---------------------------------------------------- -->
+      <div class="content">
+        <div class="row" style="margin: 0; padding: 0">
+          <!-- -------------------------------------- icon --------------------------------------- -->
+          <div class="col-3">
+            <div style="display: flex">
+              <img src="images/govt_1.png" alt="" class="icon-img-1" />
+              <img src="images/govt_2.png" alt="" class="icon-img-2" />
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------------------------- end - icon -->
+
+          <!-- --------------------------------------- title -------------------------------------- -->
+
+          <div class="col-6">
+            <p class="title">
+              Bangladesh Forest Ecosystem Services Valuation (ESV) Database
+            </p>
+          </div>
+
+          <!-- ------------------------------------------------------------------------- end - title -->
+
+          <!-- --------------------------------------- logout -------------------------------------- -->
+
+          <div class="col-3">
+            <div class="login_btn_div">
+              <button
+                class="login_btn"
+                data-toggle="modal"
+                data-target="#modalLogOut"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+
+          <!-- logout Modal -->
+          <div
+            class="modal fade"
+            id="modalLogOut"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalLogOut"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLogOut">Logout</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">Are you sure want to Log Out?</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Yes</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    No
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- end - logout modal -->
+          </div>
+
+          <!-- ------------------------------------------------------------------------ end - logout -->
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------ end - first content -->
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------- end - first section -->
+
+    <!-- -------------------------------------------------------------------- second section ------------------------------------------------------------- -->
+
+    <section id="second_section">
+      <div class="container">
+        <div class="heading_container">
+          <div>
+            <h4 class="heading_container__heading">User Management</h4>
+          </div>
+          <div>
+            <button class="heading_container__button">Export to excel</button>
+          </div>
+        </div>
+
+        <!-- -------------------------------- table ----------------------------------- -->
+        <div style="margin-top: 2%">
+          <table
+            id="example"
+            class="display"
+            style="width: 100%; text-align: center"
+          >
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date Created</th>
+                <th>Role</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Johe Doe</td>
+                <td>22/4/21</td>
+                <td>User</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-toggle="modal"
+                    data-target="#deleteModal"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Johe Doe</td>
+                <td>22/4/21</td>
+                <td>User</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-toggle="modal"
+                    data-target="#deleteModal"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Johe Doe</td>
+                <td>22/4/21</td>
+                <td>User</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-toggle="modal"
+                    data-target="#deleteModal"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Johe Doe</td>
+                <td>22/4/21</td>
+                <td>User</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-toggle="modal"
+                    data-target="#deleteModal"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ----------------------------------------------------------- end - table  -->
+
+        <!-- ------------- delete modal ------------- -->
+
+        <div
+          class="modal fade"
+          id="deleteModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Are you sure you want to remove this user?
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#deletedModal"
+                  data-dismiss="modal"
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------end -  delete modal  -->
+
+        <!-- ------- deleted successfully ----------- -->
+
+        <div
+          class="modal fade"
+          id="deletedModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Deleted successfully</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------ end - deleted successfully  -->
+        <div class="back-div">
+          <button class="back-div-btn">Back</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- end - second section  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable();
+      });
+    </script>
+  </body>
+</html>

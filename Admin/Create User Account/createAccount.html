@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Data</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/view_data.css" />
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="css/createAccount.css" />
   </head>
   <body>
     <!-- ------------------------------------------------------------ first section ------------------------------------------------------------------  -->
@@ -78,14 +79,6 @@
                 </div>
                 <div class="modal-body">Are you sure want to Log Out?</div>
                 <div class="modal-footer">
-                  <!-- <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button> -->
-
                   <button type="button" class="btn btn-success">Yes</button>
                   <button
                     type="button"
@@ -108,61 +101,123 @@
       <!-- ------------------------------------------------------------------------------------------ end - first content -->
     </section>
 
+    <button class="back_button">Back</button>
+
     <!-- ----------------------------------------------------------------------------------------------------------------------------- end - first section -->
 
-    <!-- ---------------------------------------------------------------- second section ----------------------------------------------------------------- -->
-
+    <!-- ------------------------------------------------------------------- second section -------------------------------------------------------------- -->
     <section id="second_section">
-      <div class="container">
-        <h4 class="management">Data Management</h4>
+      <div class="second_section_width">
         <div>
-          <table>
-            <!-- <caption>
-              Employee Information
-            </caption> -->
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">My Responses</th>
-              </tr>
-            </thead>
-            <!-- <tfoot>
-              <tr>
-                <td colspan="3">Data is updated every 15 minutes.</td>
-              </tr>
-            </tfoot> -->
-            <tbody>
-              <tr>
-                <th scope="row">ES_value_ID</th>
-                <td>xyz</td>
-              </tr>
-              <tr>
-                <th scope="row">StudyID</th>
-                <td>xyz</td>
-              </tr>
-              <tr>
-                <th scope="row">TEEB_Biome</th>
-                <td>xyz</td>
-              </tr>
-              <tr>
-                <th scope="row">TEEB_Biome_Code</th>
-                <td>xyz</td>
-              </tr>
-              <tr>
-                <th scope="row">Ecosystem</th>
-                <td>xyz</td>
-              </tr>
+          <h4 class="new_user_text">Create New User Account</h4>
+        </div>
+        <div class="form-div">
+          <form action="">
+            <div>
+              <div>
+                <label for="">Full Name</label>
+              </div>
+              <div>
+                <input type="text" />
+              </div>
+            </div>
 
-              <tr>
-                <th scope="row">TEEB_ES_Code</th>
-                <td>xyz</td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="form_div_part_margin">
+              <div>
+                <label for="">User Name</label>
+              </div>
+              <div>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="form_div_part_margin">
+              <div>
+                <label for="">Email</label>
+              </div>
+              <div>
+                <input type="email" />
+              </div>
+            </div>
+
+            <div class="form_div_part_margin">
+              <div>
+                <label for="">Password</label>
+              </div>
+              <div>
+                <input type="password" />
+              </div>
+            </div>
+
+            <div class="form_div_part_margin">
+              <div>
+                <label for="">Gender</label>
+              </div>
+              <div>
+                <select name="" id="">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Any</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form_div_part_margin">
+              <div>
+                <label for="">Date of birth</label>
+              </div>
+              <div>
+                <input type="date" />
+              </div>
+            </div>
+            <div class="form_div_part_margin">
+              <div>
+                <!-- <input type="submit" value="Create Account" /> -->
+                <button
+                  type="button"
+                  class="submit-btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Create Account
+                </button>
+              </div>
+
+              <!-- ---------------- create account modal ---------------- -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                   
+                    <div class="modal-body" style="text-align: center;">Account successfully created</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- --------------------------- end - create account modal -->
+            </div>
+            <br />
+          </form>
         </div>
       </div>
     </section>
-
     <!-- --------------------------------------------------------------------------------------------------------------------------- end - second section  -->
 
     <script

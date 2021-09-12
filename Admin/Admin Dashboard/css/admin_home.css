@@ -8,6 +8,8 @@ body {
 
 /* -----------------------------------------end - font */
 
+/* ---------------------------- first section ------------------------ */
+
 #first_section {
   background: #243413;
   padding: 5px;
@@ -20,15 +22,205 @@ body {
   margin-left: 15px;
 }
 
-/* --------------- management h4 ------------- */
+/* ---------------------- left side div ----------------------- */
 
-.management {
-  margin-left: 73px;
-  padding-top: 50px;
-  padding-bottom: 10px;
+.work-progress-div {
+  border: 1px solid #220082;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 10px;
 }
 
-/* --------------------- end -  management h4  */
+.work_progress {
+  text-align: center;
+  font-weight: 600;
+}
+
+.progress_div_background {
+  background-color: #220082;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.progress_div_background_2 {
+  background-color: #009797;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.left-side-div-title {
+  padding-bottom: 20px;
+}
+
+.left-side-div-padding {
+  padding: 50px;
+  background-color: white;
+}
+
+.left-side-div-title {
+  text-align: center;
+  color: #220082;
+  font-size: 19px;
+}
+
+.completed_this_month {
+  padding-top: 30px;
+}
+
+.list_view {
+  margin-top: 15px;
+}
+
+.list_view--text {
+  display: flex;
+  justify-content: right;
+}
+
+/* ---------------- in progress div ------- -- */
+
+.in-progress-div {
+  margin-top: 10px;
+}
+
+.in-progress-header {
+  font-size: 22px;
+}
+
+.in-progress-p {
+  font-size: 13px;
+  color: #e5e5e5;
+}
+
+/* ---------------- end ------in progress div  */
+
+/* ------------------------------------------ end left side div */
+
+/* --------------------- right side div ----------------------- */
+
+.right-side-div-padding {
+  background-color: white;
+  padding: 50px;
+}
+
+.right-side-div-title {
+  text-align: center;
+  color: #609513;
+  font-size: 19px;
+}
+
+/* ---------- right side div button -------- */
+
+.right-side-button-div {
+  margin-top: 10%;
+}
+
+.view-data-button {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 200px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #538200;
+  color: white;
+  padding: 10px 0;
+}
+
+/* ------------ end - right side div button  */
+
+/* ----------------- settings -------------- */
+
+.settings-margin {
+  margin-top: 30px;
+}
+
+.settings-title {
+  text-align: center;
+  color: #009797;
+  font-size: 19px;
+}
+
+/* -------------------------- end - settings */
+
+/* --------- change-password-div ----------- */
+
+.change-password-div {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: 1px solid #009797;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #c4c4c4;
+  margin-top: 20px;
+  /* width: auto; */
+  max-width: 100%;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #009797;
+  width: 70%;
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  padding: 10px 0;
+  color: white;
+  font-size: 13px;
+}
+
+.file {
+  margin-left: 100px;
+}
+
+/* -------------- end - change-password-div  */
+
+/* -------------------------------------- end - right side div  */
+
+/* --------- icon ----------- */
+
+.icon-img-1 {
+  width: 30px;
+}
+
+.icon-img-2 {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* --------------- end - icon */
+
+/* --------- title ----------- */
+
+.title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* --------------- end - title */
+
+/* --------- login ----------- */
 
 .login_btn_div {
   padding-top: 10px;
@@ -52,88 +244,17 @@ body {
   color: white;
 }
 
-/* --------- title ----------- */
+/* --------------- end - login */
 
-.title {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  text-align: center;
-  padding-top: 10px;
+/* -- container padding ----- */
+
+.container-padding {
+  margin-top: 3%;
 }
 
-/* --------------- end - title */
+/* - end - container padding - */
 
-/* --------- icon ----------- */
-
-.icon-img-1 {
-  width: 30px;
-}
-
-.icon-img-2 {
-  width: 30px;
-  margin-left: 10px;
-}
-
-/* --------------- end - icon */
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-table {
-  width: 1000px;
-  max-width: 960px;
-  margin: 10px auto;
-}
-
-caption {
-  font-size: 1.6em;
-  font-weight: 400;
-  padding: 10px 0;
-}
-
-thead th {
-  font-weight: 400;
-  background: #538200;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-tr {
-  background: #f4f7f8;
-  border-bottom: 0.5px solid #e3dada;
-  margin-bottom: 5px;
-}
-
-/* tr:nth-child(even) {
-  background: #e8eeef;
-} */
-
-th,
-td {
-  text-align: center;
-  padding: 20px;
-  font-weight: 300;
-  font-size: 13px;
-}
-
-tfoot tr {
-  background: none;
-}
-
-tfoot td {
-  padding: 10px 2px;
-  font-size: 0.8em;
-  font-style: italic;
-  color: #8a97a0;
-}
+/* ---------------------------------------------- end - first section  */
 
 /* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
 
